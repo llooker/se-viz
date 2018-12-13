@@ -886,7 +886,7 @@ looker.plugins.visualizations.add({
     // DEBUG CHECK
     console.log("table_col_details", table_col_details)
     console.log("tbl_data", tbl_data)
-
+    var group_by
     if (config.use_grouping == true) {
         group_by = config.group_by
     } else {
