@@ -23095,8 +23095,7 @@ var handleErrors = function (vis, res, options) {
 
 
 /***/ }),
-/* 465 */,
-/* 466 */
+/* 465 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -33467,6 +33466,7 @@ return jQuery;
 
 
 /***/ }),
+/* 466 */,
 /* 467 */
 /***/ (function(module, exports) {
 
@@ -33569,7 +33569,7 @@ function toComment(sourceMap) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(466);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(465);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_pivottable__ = __webpack_require__(484);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_pivottable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_pivottable__);
@@ -33820,7 +33820,7 @@ looker.plugins.visualizations.add(vis);
 
   callWithJQuery = function(pivotModule) {
     if (true) {
-      return pivotModule(__webpack_require__(466));
+      return pivotModule(__webpack_require__(465));
     } else if (typeof define === "function" && define.amd) {
       return define(["jquery"], pivotModule);
     } else {
