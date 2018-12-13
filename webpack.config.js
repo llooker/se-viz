@@ -28,7 +28,7 @@ var webpackConfig = {
     extensions: [".ts", ".js"]
   },
   plugins: [
-    new UglifyJSPlugin()
+  //  new UglifyJSPlugin()
   ],
   module: {
     loaders: [
