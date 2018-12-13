@@ -11254,7 +11254,7 @@ looker.plugins.visualizations.add({
     }
 
     // BUILD TABLE DATA ARRAY
-    for (j = 0; j < data.length; j++) {
+    for (var j = 0; j < data.length; j++) {
       var row = {id: j};
 
       for (var i = 0; i < dim_names.length; i++) {
@@ -11330,7 +11330,7 @@ looker.plugins.visualizations.add({
       mea_details.push(mea_definition)
     }
 
-    for (j = 0; j < data.length; j++) {
+    for (var j = 0; j < data.length; j++) {
       for (var i = 0; i < mea_names.length; i++) {
           var raw_name = mea_names[i]
           var safe_name = mea_names[i].replace(".", "|")
