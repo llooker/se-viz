@@ -1,5 +1,7 @@
 import * as tabulator from 'tabulator-tables'
 
+import $ from 'jquery'
+
 var format_usd = {
       decimal: ".",
       thousand: ",",
