@@ -710,13 +710,13 @@ looker.plugins.visualizations.add({
     var new_options = global_options
     var group_by_options = []
     queryResponse.fields.dimension_like.forEach(function(field) {
-      safe_name = field.name.replace(".", "|");
-      id = "Width: " + safe_name;
+      var safe_name = field.name.replace(".", "|");
+      var id = "Width: " + safe_name;
       new_options[id] = {
         default: null,
         type: "number",
       };
-      group_option = {};
+      var group_option = {};
       group_option[field.label_short] = safe_name
       group_by_options.push(group_option);
     });
@@ -731,8 +731,8 @@ looker.plugins.visualizations.add({
     };
 
     queryResponse.fields.measure_like.forEach(function(field) {
-      safe_name = field.name.replace(".", "|");
-      id = "Width: " + safe_name;
+      var safe_name = field.name.replace(".", "|");
+      var id = "Width: " + safe_name;
       new_options[id] = {
         default: null,
         type: "number",
@@ -780,7 +780,7 @@ looker.plugins.visualizations.add({
         var safe_name = dim_name.replace(".", "|")
         var dim_object = queryResponse.fields.dimension_like[i]
 
-        dim_definition = {
+        var dim_definition = {
           title: dim_object.label_short,
           field: safe_name,
           align: dim_object.align,
@@ -818,7 +818,7 @@ looker.plugins.visualizations.add({
       var safe_name = mea_name.replace(".", "|")
       var mea_object = queryResponse.fields.measure_like[i]
 
-      mea_definition = {
+      var mea_definition = {
         title: mea_object.label_short,
         field: safe_name,
         align: mea_object.align,
@@ -879,7 +879,7 @@ looker.plugins.visualizations.add({
       }
     }
 
-    table_col_details = dim_details.concat(mea_details)
+    var table_col_details = dim_details.concat(mea_details)
 
     // DEBUG CHECK
     console.log("table_col_details", table_col_details)
@@ -891,7 +891,7 @@ looker.plugins.visualizations.add({
         group_by = null
     };
 
-    initial_sort = table_col_details[0].field;
+    var initial_sort = table_col_details[0].field;
 
     var tbl = $("#finance-tabulator").tabulator({
       data: tbl_data,           //load row data from array
