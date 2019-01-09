@@ -33,7 +33,7 @@
     "typescript": "2.6.2",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "3.10.0",
-    "webpack-dev-server": "2.9.7",
+    "webpack-dev-server": "3.1.14",
     "tabulator-tables":"4.1.0"
   },
   "dependencies": {
